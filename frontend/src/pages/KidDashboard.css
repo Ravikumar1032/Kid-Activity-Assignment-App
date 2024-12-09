@@ -1,0 +1,166 @@
+/* Style the card container */
+/* .kid-dashbord{
+
+    width: 600px;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1), 10px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+      
+} */
+
+.card {
+    position: relative;
+    border: none; /* Remove default border */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1), 10px 10px 20px rgba(0, 0, 0, 0.1); /* Water drop effect */
+  }
+
+.points{
+    font-size: 20px;
+}
+
+.coin{
+    color: orange;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Star Rating - Smooth and Interactive */
+.star-rating {
+    display: flex;
+    /* justify-content: left; */
+    /* align-items: center; */
+}
+
+
+/* Custom Colors */
+.text-yellow {
+    color: #f9d800; /* Custom Yellow */
+}
+
+
+.star {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ddd;
+    transition: color 0.3s ease;
+    margin-right: 5px; 
+}
+
+.star:hover,
+.star:focus {
+    color: #ffcc00; /* Color on hover */
+}
+
+.star.filled {
+    color: #ffcc00; /* Color for filled stars */
+}
+
+.star-rating i.bi-star {
+    color: #ddd; /* Grey color for unfilled stars */
+}
+
+.star-rating i.bi-star-fill {
+    color: #ffcc00; /* Yellow color for filled stars */
+}
+
+.star-rating i:hover {
+    color: #ffcc00; /* Color on hover */
+}
+
+/* Smooth transition effect on hover and active selection */
+.star-rating input[type="radio"] {
+    display: none; /* Hide the default radio input */
+}
+
+.star-rating input[type="radio"]:checked ~ .star {
+    color: #ffcc00; /* Color for checked stars */
+}
+
+.star-rating input[type="radio"]:not(:checked) ~ .star {
+    color: #ddd; /* Color for unselected stars */
+}
+
+
+.star:hover,
+.star:focus {
+    color: #ffcc00;
+}
+
+.text-danger {
+    color: red !important;
+}
+
+.text-warning {
+    color: #ffcc00 !important;
+}
+
+.text-success {
+    color: green !important;
+}
+
+.text-secondary {
+    color: #6c757d !important;
+}
+
+/* Style for input fields and buttons */
+input[type="number"] {
+    width: 100%;
+    /* margin-top: 10px; */
+}
+
+button {
+    width: 100%;
+    /* margin-top: 10px; */
+}
+
+.form-select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments for the activity cards */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 15px;
+    }
+
+    .star {
+        font-size: 1.25rem;
+    }
+}
+
+/* Style for the kid activity list */
+.row {
+    margin-top: 20px;
+}
+
+/* delete pop up box  */
+.popup-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.popup-content p {
+    margin-bottom: 20px;
+}

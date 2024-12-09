@@ -1,0 +1,137 @@
+.section-bg {
+    background-color:#e7ebee ;
+    /* padding: 10% ; */
+}
+.get-start{
+    width: 200px !important;
+}
+
+.typing-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.card {
+    margin: 15px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.block-2 {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    margin-bottom: 20px;
+}
+
+.wrap-icon {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: -60px;
+    border-radius: 50%;
+    /* border: 2px solid green; */
+    background-color: #007bff;
+
+}
+
+.wrap-icon span i {
+    font-size: 28px;
+    /* padding: 20px; */
+    position: relative;
+    top: 10px;
+
+}
+
+.block-2 .wrap-icon {
+    font-size: 30px;
+    /* margin-bottom: 15px; */
+    display: inline-block;
+    color: #fff;
+}
+
+.block-2 {
+    background-color: #007bff;
+}
+
+
+.block-2 h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.block-2 p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.text-head {
+    text-align: center;
+    font-size: 41px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* our client says */
+.site-section1 {
+    padding: 4rem 0;
+}
+
+.text-cursive {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.25rem;
+}
+
+
+.text-red {
+    color: #e63946;
+}
+
+.testimonial-3 {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.vcard-wrap {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.vcard {
+    object-fit: cover;
+}
+
+.text h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.text .position {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.text p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.home-text{
+    margin:150px;
+}

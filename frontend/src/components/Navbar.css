@@ -1,0 +1,59 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* .nav_cont{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+    padding: 10px 20px 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    left:0;
+    position: sticky;
+    z-index: 1000;
+  } */
+  
+  /* List Styling */
+  .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  
+  /* List Items */
+  .list li {
+    margin: 0 15px;
+  }
+  
+  .list li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding: 5px 0;
+  }
+  
+  /* Hover Effects */
+  .list li a:hover {
+    color: #ffdd57;
+    border-bottom: 2px solid #ffdd57;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .list li {
+      margin: 10px 0;
+    }
+  }
+  

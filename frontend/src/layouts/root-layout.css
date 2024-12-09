@@ -1,0 +1,34 @@
+.nav-row{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+    padding: 10px 20px 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    /* position: fixed; */
+    top: 0;
+    left:0;
+    /* position: sticky; */
+    z-index: 10;
+}
+
+.bi-person-circle{
+    font-size:25px;
+    /* color: #000; */
+}
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+}
+.signIn{
+    margin-top: 7px;
+}
+.profile_btn{
+    margin-top: -7px;
+}
+
+  
