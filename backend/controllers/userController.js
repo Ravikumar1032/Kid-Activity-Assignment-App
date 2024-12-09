@@ -145,6 +145,39 @@ exports.updateActivityPoints = async (req, res) => {
   }
 }
 
+
+//Delete User
+exports.handleDeleteKids = async (req, res) => {
+  const { email, kidId } = req.body;
+
+  if (!email || !kidId) {
+      return res.status(400).json({ message: 'Email and Kid ID are required' });
+  }
+
+  try {
+      // Find the user by email
+      const user = await User.findOne({ email });
+
+      if (!user) {
+          return res.status(404).json({ message: 'User not found' });
+      }
+
+      // Remove the kid from the user's kids array
+      const updatedKids = user.kids.filter((kid) => kid.kid_id.toString() !== kidId);
+      if (updatedKids.length === user.kids.length) {
+          return res.status(404).json({ message: 'Kid not found' });
+      }
+
+      user.kids = updatedKids;
+      await user.save();
+
+      res.status(200).json({ message: 'Kid deleted successfully', kids: user.kids });
+  } catch (error) {
+      console.error('Error deleting kid:', error);
+      res.status(500).json({ message: 'An error occurred while deleting the kid' });
+  }
+}
+
 exports.handleDeleteActivity = async (req, res) => {
   const { email, kidId, activityId } = req.body;
 

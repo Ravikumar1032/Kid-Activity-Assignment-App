@@ -1,5 +1,5 @@
 const express = require('express');
-const { loginWithGoogle,handleAddKid,handleAddActivity, handleGetKidActivity,updateActivityPoints,getKidSummary, handleGetAllKids,handleUpdateActivity,handleDeleteActivity,handleGetPast7DaysActivities } = require('../controllers/userController');
+const { loginWithGoogle,handleAddKid,handleAddActivity, handleGetKidActivity,updateActivityPoints,getKidSummary, handleGetAllKids,handleUpdateActivity,handleDeleteActivity,handleGetPast7DaysActivities,handleDeleteKids } = require('../controllers/userController');
 const router = express.Router();
 
 router.post('/login/google', loginWithGoogle);
@@ -12,4 +12,5 @@ router.get('/kids',handleGetAllKids);
 router.post('/complete-activity',handleUpdateActivity);
 router.delete('/delete-activity',handleDeleteActivity);
 router.get('/activities-past-7-days',handleGetPast7DaysActivities);
+router.delete('/delete-kid',handleDeleteKids);
 module.exports = router;
