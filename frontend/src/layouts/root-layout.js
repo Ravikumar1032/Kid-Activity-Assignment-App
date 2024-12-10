@@ -13,7 +13,8 @@ import {
 } from '@clerk/clerk-react';
 
 // Clerk Publishable Key
-const PUBLISHABLE_KEY = 'pk_test_dXB3YXJkLXBpcGVmaXNoLTQ2LmNsZXJrLmFjY291bnRzLmRldiQ';
+// VITE_CLERK_PUBLISHABLE_KEY=pk_test_Y29tbXVuYWwtaW1wYWxhLTUwLmNsZXJrLmFjY291bnRzLmRldiQ
+const PUBLISHABLE_KEY = 'pk_test_Y29tbXVuYWwtaW1wYWxhLTUwLmNsZXJrLmFjY291bnRzLmRldiQ';
 
 if (!PUBLISHABLE_KEY) {
   throw new Error('Missing Publishable Key');

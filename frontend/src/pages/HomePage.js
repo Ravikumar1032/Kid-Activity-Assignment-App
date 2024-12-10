@@ -29,11 +29,28 @@ export default function HomePage() {
 
   // cards text 
   const cards = [
-    { title: "Arts & Crafts", description: "Explore creativity with fun projects and games.", imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDd3nv9NT4Fg8PAeC_Uy2RjrD9Fx123JVvJg&s" },
-    { title: "Storytelling", description: "Engaging stories to inspire imagination.", imageSrc: "https://hbr.org/resources/images/article_assets/2021/05/A_May21_14_Storytelling-4-Ways_Ruby-Taylor.png" },
-    { title: "Music & Dance", description: "Learn rhythms and enjoy fun music.", imageSrc: "https://timemaster.ae/uploads/news_article/how-music-and-dance-can-help-your-child-s-development_2022_05_11_08_40_37.webp" },
-    // { title: "Outdoor Adventures", description: "Explore the outdoors with exciting activities." },
-  ];
+    { 
+        title: "Arts & Crafts", 
+        description: "Discover a world of colors, textures, and ideas with hands-on activities that ignite creativity and teach new skills.", 
+        imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDd3nv9NT4Fg8PAeC_Uy2RjrD9Fx123JVvJg&s" 
+    },
+    { 
+        title: "Storytelling", 
+        description: "Dive into captivating tales and magical adventures that stimulate the imagination and build a love for storytelling.", 
+        imageSrc: "https://hbr.org/resources/images/article_assets/2021/05/A_May21_14_Storytelling-4-Ways_Ruby-Taylor.png" 
+    },
+    { 
+        title: "Music & Dance", 
+        description: "Get moving with energetic beats, learn exciting dance steps, and explore the joy of music through rhythm and melody.", 
+        imageSrc: "https://timemaster.ae/uploads/news_article/how-music-and-dance-can-help-your-child-s-development_2022_05_11_08_40_37.webp" 
+    },
+    // { 
+    //     title: "Outdoor Adventures", 
+    //     description: "Embark on thrilling outdoor experiences, connect with nature, and create lasting memories through fun-filled activities.", 
+    //     imageSrc: "https://www.familyvacationcritic.com/wp-content/uploads/2021/03/outdoor_activities_for_kids.jpg" 
+    // }
+];
+
 
   // Carousel 
   // Owl Carousel options
@@ -145,7 +162,7 @@ export default function HomePage() {
               <motion.div
                 key={index}
                 className="col-lg-4 col-md-6 col-sm-12"
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.9 }}
               >
                 <div className="card">
@@ -212,10 +229,13 @@ export default function HomePage() {
             </motion.p>
             <center>
               <motion.button
-                className="btn btn-primary w-50"
+                className="btn btn-primary w-50 mt-3"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
+                onClick={()=>{
+
+                }}
               >
                 Learn More
               </motion.button>
@@ -226,7 +246,7 @@ export default function HomePage() {
 
       {/* 3 cards section */}
       <div className="site-section container-fluid py-5">
-        <center><div className="text-head">Our Mission</div></center>
+        <center><div className="text-head">Our Core Values</div></center>
         <div className="container">
           <div className="row">
             <div className="col-lg-4">
